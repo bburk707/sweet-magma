@@ -1,8 +1,10 @@
+name: Node Continuous Integration
 on: push
 jobs:
-  first-job:
+  build-node:
+    name: Build Node
     runs-on: ubuntu-latest
-    container: node:20.2.0 npm:9.6.6
+    container: node:20.2.0
     steps:
       - run: node --version
       - run: npm --version
