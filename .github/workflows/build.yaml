@@ -8,3 +8,5 @@ jobs:
     steps:
       - run: node --version
       - run: npm --version
+      - uses: actions/checkout@v4.1.1
+      - dir:
