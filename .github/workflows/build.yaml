@@ -2,6 +2,7 @@ name: Node Continuous Integration
 on: push
 jobs:
   release-project:
+    permissions: write-all
     name: Release Project
     runs-on: ubuntu-latest
     needs: build-node
