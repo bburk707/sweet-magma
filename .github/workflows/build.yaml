@@ -12,6 +12,8 @@ jobs:
       - run: ls -R
       - name: Archive Site content
         uses: TheDoctor0/zip-release@0.7.6
+        with:
+          filename: site.zip
   build-node:
     name: Build Node
     runs-on: ubuntu-latest
