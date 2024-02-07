@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+      - run: npm install
       - uses: actions/checkout@v3
         with:
           submodules: true
