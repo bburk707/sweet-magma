@@ -1,15 +1,30 @@
-
+import Image from "next/image";
+import PulsingLogo from "@/components/PulsingLogo";
+import '../pages/styles.css'
+import '../../public/fonts/fonts.css'
 
 
 export default function Page() {
   return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <h1>Hello, Next.js!</h1>
-          <button
-            className="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
-            Save changes
-          </button>
+        <div className="z-10 max-w-5xl w-full items-center flex-col justify-center font-mono text-sm lg:flex">
+            <PulsingLogo/>
+            <div className="flex-row animate-pulse">
+                <Image
+                    src="/littlex.svg"
+                    alt="left x"
+                    width={30}
+                    height={48}
+                />
+                <p className="font-hipsterish text-4xl text-ash-gray m-6">Coming Soon</p>
+                <Image
+                    src="/littlex.svg"
+                    alt="right x"
+                    width={30}
+                    height={48}
+                />
+            </div>
+
         </div>
       </main>
   );
