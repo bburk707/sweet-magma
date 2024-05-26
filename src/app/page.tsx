@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PulsingLogo from "@/components/PulsingLogo";
 import '../pages/styles.css'
+import '../../public/fonts/fonts.css'
 
 
 export default function Page() {
@@ -15,7 +16,7 @@ export default function Page() {
                     width={30}
                     height={48}
                 />
-                <p className="font-mono text-3xl text-ash-gray m-6">Coming Soon</p>
+                <p className="font-hipsterish text-4xl text-ash-gray m-6">Coming Soon</p>
                 <Image
                     src="/littlex.svg"
                     alt="right x"

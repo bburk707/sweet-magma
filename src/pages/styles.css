@@ -1,19 +1,19 @@
 @keyframes logoScaleAnimation {
     0% {
-        transform: scale(1);
+        transform: scale(1.15);
     }
     50% {
         transform: scale(.85); /* Scale up to 110% */
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.15);
     }
 }
 
 .animate-logo-scale {
     width: 100px;
     height: 100px;
-    animation: logoScaleAnimation 3s infinite; /* Animation name, duration, and iteration count */
+    animation: logoScaleAnimation 5s infinite; /* Animation name, duration, and iteration count */
 }
 
 .button-widen {
