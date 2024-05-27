@@ -9,14 +9,14 @@ export default function Page() {
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 max-w-5xl w-full items-center flex-col justify-center font-mono text-sm lg:flex">
             <PulsingLogo/>
-            <div className="flex-row animate-pulse">
+            <div className="flex-row">
                 <Image
                     src="/littlex.svg"
                     alt="left x"
                     width={30}
                     height={48}
                 />
-                <p className="font-hipsterish text-4xl text-ash-gray m-6">Coming Soon</p>
+                <p className="font-hipsterish text-4xl text-ash-gray m-6">Coming Soon(ish)</p>
                 <Image
                     src="/littlex.svg"
                     alt="right x"
