@@ -2,17 +2,19 @@ import Image from "next/image";
 import PulsingLogo from "@/components/PulsingLogo";
 import '../pages/styles.css'
 import '../../public/fonts/fonts.css'
+import Link from "next/link";
 
 
 export default function Page() {
   return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="z-10 max-w-5xl w-full items-center flex-col justify-center font-mono text-sm lg:flex">
+      <main className="flex min-h-screen flex-col items-center p-24">
+        <div className="content-container">
             <PulsingLogo/>
             <div className="flex-row">
                 <Image
                     src="/littlex.svg"
                     alt="left x"
+                    className="responsive-image"
                     width={30}
                     height={48}
                 />
@@ -20,10 +22,12 @@ export default function Page() {
                 <Image
                     src="/littlex.svg"
                     alt="right x"
+                    className="responsive-image"
                     width={30}
                     height={48}
                 />
             </div>
+            {/*<Link href="/dashboard/about" className="button-orange-explosion border-ash-gray border-2 px-4 py-2 text-ash-gray">Enter</Link>*/}
 
         </div>
       </main>

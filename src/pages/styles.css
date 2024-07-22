@@ -1,3 +1,29 @@
+/* custom-styles.css */
+
+/* Base styles for larger screens */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.responsive-image {
+    width: 30px;
+    height: 48px;
+    transition: width 0.3s, height 0.3s; /* Smooth transition */
+}
+
 @keyframes logoScaleAnimation {
     0% {
         transform: scale(1.15);
@@ -97,4 +123,29 @@
 
 .button-orange-explosion:hover {
     color: black;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+
+    .text-4xl {
+        font-size: 1.25rem; /* Adjust font size for mobile */
+    }
+
+    .m-6 {
+        margin: 4px; /* Adjust margin for mobile */
+    }
+
+    .flex-row {
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+    .responsive-image {
+        display: none;
+        width: 20px;  /* Adjust width for mobile */
+        height: 32px; /* Adjust height for mobile */
+    }
+    .animate-logo-scale {
+        width: 60px;
+        height: 60px;
+    }
 }

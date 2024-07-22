@@ -4,7 +4,7 @@ import Image from "next/image";
 const PulsingLogo = () => {
     return (
         <Image
-            className="animate-logo-scale"
+            className="animate-logo-scale justify-center"
             src="/logo.svg"
             alt="Pepper Logo"
             width={250}
